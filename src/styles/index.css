@@ -1,0 +1,13 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: var(--background-color);
+}
+
+:root {
+	--background-color: #eeeded;
+	--text-primary: black;
+	--text-secondary: #2d2d2d;
+	--text-accent: #007bff;
+}
