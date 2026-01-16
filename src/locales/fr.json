@@ -1,0 +1,13 @@
+{
+	"nav": {
+		"projects": "Projets",
+		"education": "Education",
+		"skills": "Competences",
+		"contact": "Contact"
+	},
+	"hero": {
+		"title": "Je suis Leny,",
+		"subtitle": "étudiant en Master développement logiciel",
+		"description": "Développeur polyvalent capable de s'adapter à différents environnements : du Web aux systèmes bas niveau, en passant par l'IA avec Python."
+	}
+}

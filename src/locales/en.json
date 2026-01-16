@@ -1,0 +1,13 @@
+{
+	"nav": {
+		"projects": "Projects",
+		"education": "Education",
+		"skills": "Skills",
+		"contact": "Contact"
+	},
+	"hero": {
+		"title": "I am Leny,",
+		"subtitle": "Software Engineering Master's student",
+		"description": "Versatile developer with a strong ability to adapt: from Web to low-level systems, including AI with Python."
+	}
+}
