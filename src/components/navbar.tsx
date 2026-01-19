@@ -8,9 +8,9 @@ function Navbar() {
 		<nav className="navbar">
 		<div className="navbar-logo">MyApp</div>
 		<ul className="navbar-links">
-			<li>{t('nav.projects')}</li>
-			<li>{t("nav.education")}</li>
-			<li>{t("nav.skills")}</li>
+			<li><a href="#projects">{t('nav.projects')}</a></li>
+			<li><a href="#education">{t("nav.education")}</a></li>
+			<li><a href="#skills">{t("nav.skills")}</a></li>
 			<li className="contact">{t("nav.contact")}</li>
 		</ul>
 		</nav>
