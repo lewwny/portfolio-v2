@@ -1,0 +1,36 @@
+.navbar-projects {
+    background-color: white;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin: 3rem auto;
+    width: fit-content;
+}
+
+.navbar-projects .elt {
+    color: var(--text-secondary);
+    background-color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.navbar-projects .elt:hover {
+    color: var(--text-accent);
+    cursor: pointer;
+}
+
+.navbar-projects .elt p {
+    background: white;
+}
+
+.navbar-projects .column {
+    display: block;
+    align-self: stretch;
+    background-color: black;
+    width: 1px;;
+    margin: 0;
+}

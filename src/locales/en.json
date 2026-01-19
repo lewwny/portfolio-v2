@@ -8,6 +8,22 @@
 	"hero": {
 		"title": "I am Leny,",
 		"subtitle": "Software Engineering Master's student",
-		"description": "Versatile developer with a strong ability to adapt: from Web to low-level systems, including AI with Python."
+		"description": "Versatile developer with a strong ability to adapt: from Web to low-level systems, including AI with Python.",
+		"internship": "Available for internship",
+		"work": "Open to work opportunities",
+		"no_internship": "Not available for internship",
+		"no_work": "Not open to work opportunities"
+	},
+	"projects": {
+		"title": "Projects",
+		"description": "A collection of my work in AI and Web development."
+	},
+	"education": {
+		"title": "Education",
+		"description": "My academic background and qualifications."
+	},
+	"skills": {
+		"title": "Skills",
+		"description": "Technologies and tools I am proficient in."
 	}
 }

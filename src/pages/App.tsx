@@ -1,5 +1,8 @@
 import '../styles/App.css'
 import Navbar from '../components/navbar'
+import Education from '../components/education';
+import Projects from '../components/projects';
+import Skills from '../components/skills';
 import { useTranslation } from 'react-i18next';
 import {useState} from 'react';
 
@@ -30,25 +33,25 @@ function App() {
 					{internship &&
 						<li>
 							<div className="green_circle"></div>
-							Available for internship.
+							{t("hero.internship")}
 						</li>
 					}
 					{work &&
 						<li>
 							<div className="green_circle"></div>
-							Open to work opportunities.
+							{t("hero.work")}
 						</li>
 					}
 					{!internship &&
 						<li>
 							<div className="red_circle"></div>
-							Not available for internship.
+							{t("hero.no_internship")}
 							</li>
 					}
 					{!work &&
 						<li>
 							<div className="red_circle"></div>
-							Not open to work opportunities.
+							{t("hero.no_work")}
 						</li>
 					}
 				</ul>
@@ -75,6 +78,16 @@ function App() {
 					</li>
 				</ul>
 			</div>
+			<div className="line"></div>
+			<Projects />
+			<div className="line"></div>
+			<Education />
+			<div className="line"></div>
+			<Skills />
+			<div className="line"></div>
+			<footer>
+				<p className='footer'>© 2026 Leny Garcia. All rights reserved.</p>
+			</footer>
 		</div>
 	)
 }

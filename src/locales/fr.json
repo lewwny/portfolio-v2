@@ -8,6 +8,22 @@
 	"hero": {
 		"title": "Je suis Leny,",
 		"subtitle": "étudiant en Master développement logiciel",
-		"description": "Développeur polyvalent capable de s'adapter à différents environnements : du Web aux systèmes bas niveau, en passant par l'IA avec Python."
+		"description": "Développeur polyvalent capable de s'adapter à différents environnements : du Web aux systèmes bas niveau, en passant par l'IA avec Python.",
+		"internship": "Disponible pour un stage",
+		"work": "Ouvert aux opportunités de travail",
+		"no_internship": "Non disponible pour un stage",
+		"no_work": "Non ouvert aux opportunités de travail"
+	},
+	"projects": {
+		"title": "Projets",
+		"description": "Une collection de mes travaux en développement IA et Web."
+	},
+	"education": {
+		"title": "Éducation",
+		"description": "Mon parcours académique et mes qualifications."
+	},
+	"skills": {
+		"title": "Compétences",
+		"description": "Technologies et outils que je maîtrise."
 	}
 }

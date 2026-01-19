@@ -1,0 +1,9 @@
+[
+  {
+    "titre": "ft_linear_regression",
+    "description": "Une application de régression linéaire en Python.",
+    "tags": ["Python", "Data Science"],
+    "image": "assets/img/projet1.jpg",
+    "lien": "https://github.com/lewwny/ft_linear_regression.git"
+  }
+]

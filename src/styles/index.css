@@ -8,6 +8,26 @@
 :root {
 	--background-color: #eeeded;
 	--text-primary: black;
-	--text-secondary: #2d2d2d;
+	--text-secondary: #646464;
 	--text-accent: #007bff;
+}
+
+.section_title {
+	background-color : white;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: lighter;
+	padding: .625rem;
+	justify-content: center;
+	display: flex;
+	width: fit-content;
+	margin: 0 auto;
+	border-radius: 1.875rem;
+}
+
+.section_description {
+	text-align: center;
+	font-size: 1rem;
+	color: var(--text-secondary);
+	margin: 1rem 0 3rem 0;
 }
