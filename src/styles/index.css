@@ -31,3 +31,7 @@
 	color: var(--text-secondary);
 	margin: 1rem 0 3rem 0;
 }
+
+html {
+	scroll-behavior: smooth;
+}

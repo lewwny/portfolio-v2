@@ -22,6 +22,7 @@ function App() {
 	//render
 	return (
 		<div className="app">
+			<section id="hero"></section>
 			<Navbar />
 			<div className="hero">
 				<h1>{t("hero.title")}</h1>
@@ -79,10 +80,13 @@ function App() {
 				</ul>
 			</div>
 			<div className="line"></div>
+			<section id="projects"></section>
 			<Projects />
 			<div className="line"></div>
+			<section id="education"></section>
 			<Education />
 			<div className="line"></div>
+			<section id="skills"></section>
 			<Skills />
 			<div className="line"></div>
 			<footer>
