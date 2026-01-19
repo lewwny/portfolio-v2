@@ -1,0 +1,51 @@
+.education_container {
+    padding: 4rem 2rem;
+    background-color: var(--background-secondary);
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.education_card {
+    background-color: white;
+    border-radius: 4rem;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 30rem;
+}
+
+.education_logo {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    background-color: white;
+}
+
+.education_name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    background-color: white;
+}
+
+.education_degree {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    background-color: white;
+}
+
+.education_period {
+    font-size: .875rem;
+    color: var(--text-accent);
+    background-color: white;
+}
+
+.education_description {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+    background-color: white;
+}

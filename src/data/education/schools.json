@@ -1,0 +1,20 @@
+[
+    {
+        "name": "42 Paris",
+        "degree": "RNCP Level 7",
+        "startDate": "2025-04-22",
+        "endDate": "now",
+        "location": "Paris, France",
+        "description": "École de programmation innovante axée sur l'apprentissage par projets et la collaboration entre pairs.",
+        "logo" : "/42paris.png"
+    },
+    {
+        "name": "Self Learning Projects",
+        "degree": "Various Certifications",
+        "startDate": "Since 2021",
+        "endDate": "now",
+        "location": "Online",
+        "description": "Divers projets d'apprentissage autonome en développement web et intelligence artificielle, incluant des applications web et des modèles de machine learning.",
+        "logo" : "/self_learning.png"
+    }
+]
