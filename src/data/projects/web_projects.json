@@ -1,16 +1,16 @@
 [
   {
-    "titre": "ft_transcendence",
+    "title": "ft_transcendence",
     "description": "Une application web géniale.",
     "tags": ["React", "CSS", "Phaser"],
-    "image": "assets/img/projet1.jpg",
-    "lien": "https://github.com/mecauchy/ft_transcendence.git"
+    "image": "/ft_transcendence.png",
+    "link": "https://github.com/mecauchy/ft_transcendence.git"
   },
   {
-    "titre": "Portfolio v2",
+    "title": "Portfolio v2",
     "description": "Mon nouveau site dynamique.",
     "tags": ["React", "TypeScript", "CSS"],
-    "image": "assets/img/projet2.jpg",
-    "lien": "https://github.com/lewwny/portfolio-v2.git"
+    "image": "/portfolio-v2.png",
+    "link": "https://github.com/lewwny/portfolio-v2.git"
   }
 ]

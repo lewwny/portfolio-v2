@@ -16,6 +16,34 @@ function Projects() {
             <p className="section_description">{t("projects.description")}</p>
             <div className="projects_section">
                 <NavbarProjects onSelectionChange={(type) => setDisplayType(type)}/>
+                <div className="projects_container">
+                    {displayType === 'AI' && ai_projects.map((project, index) => (
+                        <div key={index} className="project_card">
+                            <img src={project.image} alt={project.title} className="project_image" />
+                            <h2 className="project_title">{project.title}</h2>
+                            <div className="project_link_container">
+                                <img src="/github.png" alt="github" className="project_link_img" />
+                                <a href={project.link} className="project_link" target="_blank" rel="noopener noreferrer">
+                                    Github
+                                </a>
+                            </div>
+                            <p className="project_description">{project.description}</p>
+                        </div>
+                    ))}
+                    {displayType === 'Web' && web_projects.map((project, index) => (
+                        <div key={index} className="project_card">
+                            <img src={project.image} alt={project.title} className="project_image" />
+                            <h2 className="project_title">{project.title}</h2>
+                            <div className="project_link_container">
+                                <img src="/github.png" alt="github" className="project_link_img" />
+                                <a href={project.link} className="project_link" target="_blank" rel="noopener noreferrer">
+                                    Github
+                                </a>
+                            </div>
+                            <p className="project_description">{project.description}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
