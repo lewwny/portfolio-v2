@@ -19,8 +19,24 @@
 }
 
 .navbar-projects .elt:hover {
-    color: var(--text-accent);
+    color: rgba(0, 60, 255, 0.568);
     cursor: pointer;
+}
+
+.navbar-projects .elt_selected {
+    color: var(--text-accent);
+    background-color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-projects .elt_selected:hover {
+    cursor: pointer;
+}
+
+.navbar-projects .elt_selected p {
+    background: white;
 }
 
 .navbar-projects .elt p {
