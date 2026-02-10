@@ -10,7 +10,7 @@ function App() {
 	//setter
 	const { t } = useTranslation();
 	const [internship, setInternship] = useState(true);
-	const [work, setWork] = useState(false);
+	const [work, setWork] = useState(true);
 
 	//handlers
 	const toggleInternship = () => {
@@ -60,7 +60,7 @@ function App() {
 			<div className="network">
 				<ul>
 					<li>
-						<a href="www.linkedin.com/in/leny-garcia-a95488340" target="_blank" rel="noopener noreferrer">
+						<a href="https://www.linkedin.com/in/leny-garcia-a95488340" target="_blank" rel="noopener noreferrer">
 							<img src ="/linkedin.png" alt="linkedin" />
 							LinkedIn
 						</a>

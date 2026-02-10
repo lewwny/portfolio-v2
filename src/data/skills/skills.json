@@ -1,6 +1,52 @@
 [
     {
-        "name": "a",
-        "description": "b"
+        "name": "C",
+        "description": "A powerful general-purpose programming language.",
+        "logo": "/c.png"
+    },
+    {
+        "name": "C++",
+        "description": "An extension of C that includes object-oriented features.",
+        "logo": "/c++.png"
+    },
+    {
+        "name": "Python",
+        "description": "A versatile programming language known for its readability and wide range of applications.",
+        "logo": "/python.png"
+    },
+    {
+        "name": "JavaScript",
+        "description": "A popular programming language primarily used for web development.",
+        "logo": "/javascript.png"
+    },
+    {
+        "name": "HTML",
+        "description": "The standard markup language for creating web pages.",
+        "logo": "/html.png"
+    },
+    {
+        "name": "CSS",
+        "description": "A stylesheet language used for describing the presentation of a document written in HTML.",
+        "logo": "/css.png"
+    },
+    {
+        "name": "Git",
+        "description": "A distributed version control system for tracking changes in source code during software development.",
+        "logo": "/git.png"
+    },
+    {
+        "name": "Linux",
+        "description": "An open-source operating system kernel that is widely used in various distributions.",
+        "logo": "/linux.jpeg"
+    },
+    {
+        "name": "Docker",
+        "description": "A platform for developing, shipping, and running applications in containers.",
+        "logo": "/docker.webp"
+    },
+    {
+        "name": "React",
+        "description": "A JavaScript library for building user interfaces.",
+        "logo": "/react.png"
     }
 ]

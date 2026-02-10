@@ -1,22 +1,53 @@
-import '../styles/skills.css';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import skills from '../data/skills/skills.json';
+import skillsData from '../data/skills/skills.json';
+import '../styles/skills.css';
 
-function Skills() {
-    const { t } = useTranslation();
+interface Skill {
+    name: string;
+    logo: string;
+    description: string;
+}
+
+const SkillCard = ({ skill }: { skill: Skill }) => {
+    const [isFlipped, setIsFlipped] = useState(false);
+
+    const handleFlip = () => setIsFlipped(!isFlipped);
+
     return (
-        <div className="skills">
+        <div 
+            className={`skill_card ${isFlipped ? 'flipped' : ''}`}
+            onMouseEnter={() => setIsFlipped(true)}
+            onMouseLeave={() => setIsFlipped(false)}
+            onClick={handleFlip}
+        >
+            <div className="card_inner">
+                <div className="card_front">
+                    <img src={skill.logo} alt={skill.name} className="skill_logo" />
+                </div>
+                <div className="card_back">
+                    <h3>{skill.name}</h3>
+                    <p>{skill.description}</p>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export function Skills() {
+    const { t } = useTranslation();
+    const skills = skillsData as Skill[];
+
+    return (
+        <section className="skills">
             <h1 className="section_title">{t("skills.title")}</h1>
             <p className="section_description">{t("skills.description")}</p>
             <div className="skills_container">
                 {skills.map((skill, index) => (
-                    <div key={index} className="skill_card">
-                        <h2 className="skill_name">{skill.name}</h2>
-                        <p className="skill_description">{skill.description}</p>
-                    </div>
+                    <SkillCard key={index} skill={skill} />
                 ))}
             </div>
-        </div>
+        </section>
     );
 }
 
