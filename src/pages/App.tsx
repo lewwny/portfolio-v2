@@ -4,21 +4,21 @@ import Education from '../components/education';
 import Projects from '../components/projects';
 import Skills from '../components/skills';
 import { useTranslation } from 'react-i18next';
-import {useState} from 'react';
 
 function App() {
 	//setter
 	const { t } = useTranslation();
-	const [internship, setInternship] = useState(true);
-	const [work, setWork] = useState(true);
+	const internship = true;
+	const work = true;
 
 	//handlers
-	const toggleInternship = () => {
-		setInternship(!internship);
-	};
-	const toggleWork = () => {
-		setWork(!work);
-	};
+	// const toggleInternship = () => {
+	// 	setInternship(!internship);
+	// };
+	// const toggleWork = () => {
+	// 	setWork(!work);
+	// };
+	// i want to void the handlers for build
 	//render
 	return (
 		<div className="app">
