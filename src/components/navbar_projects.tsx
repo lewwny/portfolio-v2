@@ -1,11 +1,13 @@
 import '../styles/navbar_projects.css'
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface NavbarProjectsProps {
     onSelectionChange: (type: string) => void;
 }
 
 function NavbarProjects({ onSelectionChange }: NavbarProjectsProps) {
+    const { t } = useTranslation();
     //state
     const [isAISelected, setIsAISelected] = useState(true);
     const [isWebSelected, setIsWebSelected] = useState(false);
@@ -35,9 +37,9 @@ function NavbarProjects({ onSelectionChange }: NavbarProjectsProps) {
 
     return (
         <nav className="navbar-projects">
-            <div className={style_ai} onClick={handleAISelection}><p>AI</p></div>
+            <div className={style_ai} onClick={handleAISelection}><p>{t("projectNav.ai")}</p></div>
             <div className='column'></div>
-            <div className={style_web} onClick={handleWebSelection}><p>Web</p></div>
+            <div className={style_web} onClick={handleWebSelection}><p>{t("projectNav.web")}</p></div>
         </nav>
     );
 }

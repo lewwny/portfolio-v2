@@ -25,5 +25,100 @@
 	"skills": {
 		"title": "Skills",
 		"description": "Technologies and tools I am proficient in."
+	},
+	"social": {
+		"linkedin": "LinkedIn",
+		"github": "GitHub",
+		"mail": "Mail"
+	},
+	"footer": {
+		"copyright": "© 2026 Leny Garcia. All rights reserved."
+	},
+	"projectNav": {
+		"ai": "AI",
+		"web": "Web"
+	},
+	"projectLink": {
+		"github": "Github"
+	},
+	"aiProjects": {
+		"ft_linear_regression": {
+			"title": "ft_linear_regression",
+			"description": "A linear regression application in Python."
+		},
+		"dslr": {
+			"title": "dslr",
+			"description": "Data science and lower regression project in Python."
+		},
+		"leaffliction": {
+			"title": "leaffliction",
+			"description": "A machine learning project for leaf disease classification."
+		}
+	},
+	"webProjects": {
+		"ft_transcendence": {
+			"title": "ft_transcendence",
+			"description": "An amazing web application."
+		},
+		"portfolio_v2": {
+			"title": "Portfolio v2",
+			"description": "My new dynamic website."
+		}
+	},
+	"schools": {
+		"paris42": {
+			"name": "42 Paris",
+			"degree": "RNCP Level 7",
+			"location": "Paris, France",
+			"description": "Innovative programming school focused on project-based learning and peer collaboration."
+		},
+		"self_learning": {
+			"name": "Self Learning Projects",
+			"degree": "Various Certifications",
+			"location": "Online",
+			"description": "Various self-learning projects in web development and artificial intelligence, including web applications and machine learning models."
+		}
+	},
+	"skillsList": {
+		"c": {
+			"name": "C",
+			"description": "A powerful general-purpose programming language."
+		},
+		"cpp": {
+			"name": "C++",
+			"description": "An extension of C that includes object-oriented features."
+		},
+		"python": {
+			"name": "Python",
+			"description": "A versatile programming language known for its readability and wide range of applications."
+		},
+		"javascript": {
+			"name": "JavaScript",
+			"description": "A popular programming language primarily used for web development."
+		},
+		"html": {
+			"name": "HTML",
+			"description": "The standard markup language for creating web pages."
+		},
+		"css": {
+			"name": "CSS",
+			"description": "A stylesheet language used for describing the presentation of a document written in HTML."
+		},
+		"git": {
+			"name": "Git",
+			"description": "A distributed version control system for tracking changes in source code during software development."
+		},
+		"linux": {
+			"name": "Linux",
+			"description": "An open-source operating system kernel that is widely used in various distributions."
+		},
+		"docker": {
+			"name": "Docker",
+			"description": "A platform for developing, shipping, and running applications in containers."
+		},
+		"react": {
+			"name": "React",
+			"description": "A JavaScript library for building user interfaces."
+		}
 	}
 }

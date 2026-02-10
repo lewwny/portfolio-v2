@@ -19,28 +19,28 @@ function Projects() {
                 <div className="projects_container">
                     {displayType === 'AI' && ai_projects.map((project, index) => (
                         <div key={index} className="project_card">
-                            <img src={project.image} alt={project.title} className="project_image" />
-                            <h2 className="project_title">{project.title}</h2>
+                            <img src={project.image} alt={t(`aiProjects.${project.key}.title`)} className="project_image" />
+                            <h2 className="project_title">{t(`aiProjects.${project.key}.title`)}</h2>
                             <div className="project_link_container">
                                 <img src="/github.png" alt="github" className="project_link_img" />
                                 <a href={project.link} className="project_link" target="_blank" rel="noopener noreferrer">
-                                    Github
+                                    {t("projectLink.github")}
                                 </a>
                             </div>
-                            <p className="project_description">{project.description}</p>
+                            <p className="project_description">{t(`aiProjects.${project.key}.description`)}</p>
                         </div>
                     ))}
                     {displayType === 'Web' && web_projects.map((project, index) => (
                         <div key={index} className="project_card">
-                            <img src={project.image} alt={project.title} className="project_image" />
-                            <h2 className="project_title">{project.title}</h2>
+                            <img src={project.image} alt={t(`webProjects.${project.key}.title`)} className="project_image" />
+                            <h2 className="project_title">{t(`webProjects.${project.key}.title`)}</h2>
                             <div className="project_link_container">
                                 <img src="/github.png" alt="github" className="project_link_img" />
                                 <a href={project.link} className="project_link" target="_blank" rel="noopener noreferrer">
-                                    Github
+                                    {t("projectLink.github")}
                                 </a>
                             </div>
-                            <p className="project_description">{project.description}</p>
+                            <p className="project_description">{t(`webProjects.${project.key}.description`)}</p>
                         </div>
                     ))}
                 </div>

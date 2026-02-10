@@ -4,12 +4,11 @@ import skillsData from '../data/skills/skills.json';
 import '../styles/skills.css';
 
 interface Skill {
-    name: string;
+    key: string;
     logo: string;
-    description: string;
 }
 
-const SkillCard = ({ skill }: { skill: Skill }) => {
+const SkillCard = ({ skill, t }: { skill: Skill; t: any }) => {
     const [isFlipped, setIsFlipped] = useState(false);
 
     const handleFlip = () => setIsFlipped(!isFlipped);
@@ -23,11 +22,11 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
         >
             <div className="card_inner">
                 <div className="card_front">
-                    <img src={skill.logo} alt={skill.name} className="skill_logo" />
+                    <img src={skill.logo} alt={t(`skillsList.${skill.key}.name`)} className="skill_logo" />
                 </div>
                 <div className="card_back">
-                    <h3>{skill.name}</h3>
-                    <p>{skill.description}</p>
+                    <h3>{t(`skillsList.${skill.key}.name`)}</h3>
+                    <p>{t(`skillsList.${skill.key}.description`)}</p>
                 </div>
             </div>
         </div>
@@ -44,7 +43,7 @@ export function Skills() {
             <p className="section_description">{t("skills.description")}</p>
             <div className="skills_container">
                 {skills.map((skill, index) => (
-                    <SkillCard key={index} skill={skill} />
+                    <SkillCard key={index} skill={skill} t={t} />
                 ))}
             </div>
         </section>

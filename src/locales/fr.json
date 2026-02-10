@@ -25,5 +25,100 @@
 	"skills": {
 		"title": "Compétences",
 		"description": "Technologies et outils que je maîtrise."
+	},
+	"social": {
+		"linkedin": "LinkedIn",
+		"github": "GitHub",
+		"mail": "E-mail"
+	},
+	"footer": {
+		"copyright": "© 2026 Leny Garcia. Tous droits réservés."
+	},
+	"projectNav": {
+		"ai": "IA",
+		"web": "Web"
+	},
+	"projectLink": {
+		"github": "Github"
+	},
+	"aiProjects": {
+		"ft_linear_regression": {
+			"title": "ft_linear_regression",
+			"description": "Une application de régression linéaire en Python."
+		},
+		"dslr": {
+			"title": "dslr",
+			"description": "Projet de science des données et régression en Python."
+		},
+		"leaffliction": {
+			"title": "leaffliction",
+			"description": "Un projet de machine learning pour la classification des maladies des feuilles."
+		}
+	},
+	"webProjects": {
+		"ft_transcendence": {
+			"title": "ft_transcendence",
+			"description": "Une super application web."
+		},
+		"portfolio_v2": {
+			"title": "Portfolio v2",
+			"description": "Mon nouveau site dynamique."
+		}
+	},
+	"schools": {
+		"paris42": {
+			"name": "42 Paris",
+			"degree": "Niveau RNCP 7",
+			"location": "Paris, France",
+			"description": "École de programmation innovante axée sur l'apprentissage par projets et la collaboration entre pairs."
+		},
+		"self_learning": {
+			"name": "Projets d'Apprentissage Autonome",
+			"degree": "Diverses Certifications",
+			"location": "En ligne",
+			"description": "Divers projets d'apprentissage autonome en développement web et intelligence artificielle, incluant des applications web et des modèles de machine learning."
+		}
+	},
+	"skillsList": {
+		"c": {
+			"name": "C",
+			"description": "Un langage de programmation généraliste puissant."
+		},
+		"cpp": {
+			"name": "C++",
+			"description": "Une extension de C qui inclut des fonctionnalités orientées objet."
+		},
+		"python": {
+			"name": "Python",
+			"description": "Un langage de programmation polyvalent connu pour sa lisibilité et ses nombreuses applications."
+		},
+		"javascript": {
+			"name": "JavaScript",
+			"description": "Un langage de programmation populaire principalement utilisé pour le développement web."
+		},
+		"html": {
+			"name": "HTML",
+			"description": "Le langage de balisage standard pour créer des pages web."
+		},
+		"css": {
+			"name": "CSS",
+			"description": "Un langage de feuilles de style utilisé pour décrire la présentation d'un document écrit en HTML."
+		},
+		"git": {
+			"name": "Git",
+			"description": "Un système de contrôle de version distribué pour suivre les modifications du code source."
+		},
+		"linux": {
+			"name": "Linux",
+			"description": "Un noyau de système d'exploitation open-source largement utilisé dans diverses distributions."
+		},
+		"docker": {
+			"name": "Docker",
+			"description": "Une plateforme pour développer, expédier et exécuter des applications dans des conteneurs."
+		},
+		"react": {
+			"name": "React",
+			"description": "Une bibliothèque JavaScript pour construire des interfaces utilisateur."
+		}
 	}
 }

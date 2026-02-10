@@ -1,14 +1,12 @@
 [
   {
-    "title": "ft_transcendence",
-    "description": "Une application web géniale.",
+    "key": "ft_transcendence",
     "tags": ["React", "CSS", "Phaser"],
     "image": "/ft_transcendence.png",
     "link": "https://github.com/mecauchy/ft_transcendence.git"
   },
   {
-    "title": "Portfolio v2",
-    "description": "Mon nouveau site dynamique.",
+    "key": "portfolio_v2",
     "tags": ["React", "TypeScript", "CSS"],
     "image": "/portfolio-v2.png",
     "link": "https://github.com/lewwny/portfolio-v2.git"

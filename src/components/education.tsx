@@ -11,11 +11,11 @@ function Education() {
             <div className="education_container">
                 {schools.map((school, index) => (
                     <div key={index} className="education_card">
-                        <img src={school.logo} alt={school.name} className="education_logo" />
-                        <h2 className="education_name">{school.name}</h2>
-                        <h3 className="education_degree">{school.degree}</h3>
+                        <img src={school.logo} alt={t(`schools.${school.key}.name`)} className="education_logo" />
+                        <h2 className="education_name">{t(`schools.${school.key}.name`)}</h2>
+                        <h3 className="education_degree">{t(`schools.${school.key}.degree`)}</h3>
                         <p className="education_period">{school.startDate} --- {school.endDate}</p>
-                        <p className="education_description">{school.description}</p>
+                        <p className="education_description">{t(`schools.${school.key}.description`)}</p>
                     </div>
                 ))}
             </div>

@@ -62,19 +62,19 @@ function App() {
 					<li>
 						<a href="https://www.linkedin.com/in/leny-garcia-a95488340" target="_blank" rel="noopener noreferrer">
 							<img src ="/linkedin.png" alt="linkedin" />
-							LinkedIn
+							{t("social.linkedin")}
 						</a>
 					</li>
 					<li>
 						<a href="https://www.github.com/lewwny" target="_blank" rel="noopener noreferrer">
 						<img src ="/github.png" alt="github" />
-							GitHub
+							{t("social.github")}
 						</a>
 					</li>
 					<li>
 						<a href="mailto:lenygarcia0302@gmail.com">
 						<img src ="/mail.jpg" alt="mail" />
-							Mail
+							{t("social.mail")}
 						</a>
 					</li>
 				</ul>
@@ -90,7 +90,7 @@ function App() {
 			<Skills />
 			<div className="line"></div>
 			<footer>
-				<p className='footer'>© 2026 Leny Garcia. All rights reserved.</p>
+				<p className='footer'>{t("footer.copyright")}</p>
 			</footer>
 		</div>
 	)

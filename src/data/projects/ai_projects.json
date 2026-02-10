@@ -1,21 +1,18 @@
 [
   {
-    "title": "ft_linear_regression",
-    "description": "Une application de régression linéaire en Python.",
+    "key": "ft_linear_regression",
     "tags": ["Python", "Data Science"],
     "image": "/ft_linear_regression.png",
     "link": "https://github.com/lewwny/ft_linear_regression.git"
   },
   {
-    "title": "dslr",
-    "description": "Data science and lower regression project in Python.",
+    "key": "dslr",
     "tags": ["Python", "Data Science"],
     "image": "/dslr.png",
     "link": "https://github.com/lewwny/dslr"
   },
   {
-    "title": "leaffliction",
-    "description": "A machine learning project for leaf disease classification.",
+    "key": "leaffliction",
     "tags": ["Python", "Machine Learning"],
     "image": "/leaffliction.png",
     "link": "https://github.com/lewwny/leaffliction"
