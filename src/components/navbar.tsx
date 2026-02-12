@@ -1,12 +1,10 @@
 import '../styles/navbar.css'
 import { useTranslation } from 'react-i18next';
 
-// 1. On définit le type de la prop qu'on attend
 interface NavbarProps {
     onOpenContact: () => void;
 }
 
-// 2. On récupère la prop dans le composant
 function Navbar({ onOpenContact }: NavbarProps) {
     const { t } = useTranslation();
 
@@ -18,8 +16,6 @@ function Navbar({ onOpenContact }: NavbarProps) {
                 <li><a href="#education">{t("nav.education")}</a></li>
                 <li><a href="#skills">{t("nav.skills")}</a></li>
                 
-                {/* 3. On ajoute le onClick ici */}
-                {/* J'ai ajouté style={{cursor: 'pointer'}} pour que la souris change au survol */}
                 <li 
                     className="contact" 
                     onClick={onOpenContact} 
