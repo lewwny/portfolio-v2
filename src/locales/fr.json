@@ -125,6 +125,8 @@
 		"title": "Contactez-moi",
 		"message_label": "Votre message",
 		"email_label": "votre e-mail",
-		"send_btn": "Envoyer"
+		"send_btn": "Envoyer",
+		"error_message": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard.",
+		"success_message": "Votre message a été envoyé avec succès ! Je vous répondrai dès que possible."
 	}
 }

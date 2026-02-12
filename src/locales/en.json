@@ -125,6 +125,8 @@
 		"title": "Contact Me",
 		"message_label": "Your Message",
 		"email_label": "Your Email",
-		"send_btn": "Send"
+		"send_btn": "Send",
+		"error_message": "An error occurred while sending your message. Please try again later.",
+		"success_message": "Your message has been sent successfully! I will get back to you as soon as possible."
 	}
 }
