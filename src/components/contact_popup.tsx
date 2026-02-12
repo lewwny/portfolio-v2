@@ -1,4 +1,4 @@
-import React, { useRef, useState, FormEvent } from 'react';
+import { useRef, useState, FormEvent } from 'react';
 import '../styles/contact_popup.css';
 import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
