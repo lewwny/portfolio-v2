@@ -1,64 +1,128 @@
-/* sall px in rem */
+/* navbar.css */
 
 .navbar {
-	background-color: white;
-	box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.1);
-	padding: 1rem 2rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border-radius: 1.875rem;
-	margin: 3rem;
-	position: sticky;
-	top: 1rem;
-	z-index: 1000;
+    background-color: white;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1.875rem;
+    margin: 1.5rem; /* Réduit un peu pour le mobile */
+    position: sticky;
+    top: 1rem;
+    z-index: 1000;
 }
-
 
 .navbar-logo a {
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: var(--text-primary);
-	text-decoration: none;
-	background: white;
-}
-
-.navbar-links {
-	display: flex;
-	gap: 1.5rem;
-	background-color: white;
-}
-
-.navbar-links li{
-	list-style: none;
-	padding: .5rem 1.5rem;
-	border-radius: 1.875rem;
-	background: white;
-	font-size: 1.25rem;
-	transition: color 0.3s ease;
-}
-
-.navbar-links li a {
-	color: inherit;
-	text-decoration: none;
-	background-color: white;
-}
-
-.navbar-links li:hover {
-	color: var(--text-accent);
-	cursor: pointer;
-}
-
-.navbar-links li.contact {
-	background-color: black;
-	color: white;
-	transition: background-color 0.3s ease;
-}
-
-.navbar-links li.contact:hover {
-	background-color: rgb(58, 58, 58);
+    display: flex;
+    align-items: center;
 }
 
 .logo-img {
-width: 6.25rem; height: 2.5rem;
+    width: 6.25rem; 
+    height: auto;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	background-color: white;
+}
+
+.navbar-links li {
+    padding: .5rem 1.5rem;
+    border-radius: 1.875rem;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+	background-color: white;
+}
+
+.navbar-links li a {
+    color: inherit;
+    text-decoration: none;
+	background-color: white;
+}
+
+.navbar-links li:hover:not(.contact) {
+    color: #646cff; /* Exemple de couleur accent */
+}
+
+.navbar-links li.contact {
+    background-color: black;
+    color: white;
+}
+
+/* --- BOUTON BURGER --- */
+.burger-menu {
+    display: none; /* Caché sur desktop */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.burger-menu span, .burger-menu span::before, .burger-menu span::after {
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    background: black;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.burger-menu span::before { content: ""; position: absolute; top: -8px; left: 0; }
+.burger-menu span::after { content: ""; position: absolute; bottom: -8px; left: 0; }
+
+/* Animation du burger en "X" quand ouvert */
+.burger-menu span.open { background: transparent; }
+.burger-menu span.open::before { transform: rotate(45deg); top: 0; }
+.burger-menu span.open::after { transform: rotate(-45deg); bottom: 0; }
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 767px) {
+    .navbar {
+        margin: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .burger-menu {
+        display: block; /* Visible sur mobile */
+    }
+
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* S'affiche juste sous la navbar */
+        left: 0;
+        right: 0;
+        background: white;
+        margin-top: 0.5rem;
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 0.6rem 1.2rem rgba(0,0,0,0.1);
+        gap: 1rem;
+        
+        /* Animation d'apparition */
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-links.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .navbar-links li {
+        width: 100%;
+        text-align: center;
+    }
 }
