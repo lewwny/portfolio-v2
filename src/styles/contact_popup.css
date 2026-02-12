@@ -1,0 +1,84 @@
+/* L'arrière-plan sombre qui couvre tout l'écran */
+.contact_popup_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond noir semi-transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Pour être sûr qu'il est au-dessus de tout */
+    backdrop-filter: blur(5px); /* Optionnel : effet flou sympa */
+}
+
+/* La boîte blanche du formulaire */
+.contact_popup_content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    color: #333;
+}
+
+/* Le bouton de fermeture (croix) */
+.close_btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #555;
+}
+
+/* Styles du formulaire */
+.form_group {
+    margin-bottom: 15px;
+}
+
+.form_group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form_group input,
+.form_group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.submit_btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.submit_btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Messages de statut */
+.status_msg {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+.status_msg.success { color: green; }
+.status_msg.error { color: red; }
