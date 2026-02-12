@@ -1,4 +1,4 @@
-import { useRef, useState, FormEvent } from 'react';
+import { useRef, useState, type FormEvent, useEffect } from 'react';
 import '../styles/contact_popup.css';
 import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
@@ -23,6 +23,20 @@ function ContactPopup({ isOpen, onClose }: ContactPopupProps) {
     const formRef = useRef<HTMLFormElement>(null);
     const [isSending, setIsSending] = useState<boolean>(false);
     const [status, setStatus] = useState<StatusState>({ type: null, msg: '' });
+
+    useEffect(() => {
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (e.key === 'Escape') {
+                onClose();
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [onClose]);
 
     if (!isOpen) return null;
 
