@@ -104,7 +104,7 @@ function ContactPopup({ isOpen, onClose }: ContactPopupProps) {
                             name="message" 
                             required 
                             rows={5}
-                            placeholder="Hello..." 
+                            placeholder="Message here..." 
                         />
                     </div>
 

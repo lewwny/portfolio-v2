@@ -58,3 +58,7 @@
 .navbar-links li.contact:hover {
 	background-color: rgb(58, 58, 58);
 }
+
+.logo-img {
+width: 6.25rem; height: 2.5rem;
+}

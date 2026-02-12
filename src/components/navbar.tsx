@@ -12,7 +12,7 @@ function Navbar({ onOpenContact }: NavbarProps) {
 
     return (
         <nav className="navbar">
-            <div className="navbar-logo"><a href="#hero">MyApp</a></div>
+            <div className="navbar-logo"><a href="#hero"><img src="/logo.png" alt="Logo" className="logo-img"/></a></div>
             <ul className="navbar-links">
                 <li><a href="#projects">{t('nav.projects')}</a></li>
                 <li><a href="#education">{t("nav.education")}</a></li>

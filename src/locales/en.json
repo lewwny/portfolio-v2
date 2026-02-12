@@ -120,5 +120,11 @@
 			"name": "React",
 			"description": "A JavaScript library for building user interfaces."
 		}
+	},
+	"contact": {
+		"title": "Contact Me",
+		"message_label": "Your Message",
+		"email_label": "Your Email",
+		"send_btn": "Send"
 	}
 }

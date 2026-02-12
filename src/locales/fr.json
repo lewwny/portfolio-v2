@@ -120,5 +120,11 @@
 			"name": "React",
 			"description": "Une bibliothèque JavaScript pour construire des interfaces utilisateur."
 		}
+	},
+	"contact": {
+		"title": "Contactez-moi",
+		"message_label": "Votre message",
+		"email_label": "votre e-mail",
+		"send_btn": "Envoyer"
 	}
 }

@@ -1,84 +1,195 @@
-/* L'arrière-plan sombre qui couvre tout l'écran */
+/* =========================================
+   Overlay (Fond sombre)
+   ========================================= */
 .contact_popup_overlay {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Fond noir semi-transparent */
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Noir semi-transparent */
+    backdrop-filter: blur(4px); /* Effet de flou moderne sur l'arrière-plan */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Pour être sûr qu'il est au-dessus de tout */
-    backdrop-filter: blur(5px); /* Optionnel : effet flou sympa */
+    z-index: 9999; /* Toujours au-dessus du reste */
+    animation: fadeIn 0.3s ease-out;
 }
 
-/* La boîte blanche du formulaire */
+/* =========================================
+   Conteneur du Popup (La boîte blanche)
+   ========================================= */
 .contact_popup_content {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
+    background: #ffffff;
     width: 90%;
-    max-width: 500px;
+    max-width: 480px; /* Largeur max raisonnable pour la lecture */
+    padding: 2.5rem;
+    border-radius: 12px; /* Coins arrondis modernes */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Ombre douce */
     position: relative;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    animation: slideUp 0.3s ease-out;
+}
+
+/* Titre */
+.contact_popup_content h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    background-color: white;
+}
+
+/* =========================================
+   Bouton Fermer (La croix)
+   ========================================= */
+.close_btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    line-height: 1;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close_btn:hover {
     color: #333;
 }
 
-/* Le bouton de fermeture (croix) */
-.close_btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #555;
+/* =========================================
+   Formulaire
+   ========================================= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem; /* Espacement uniforme entre les champs */
+    background-color: white;
 }
 
-/* Styles du formulaire */
 .form_group {
-    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+    background-color: white;
 }
 
 .form_group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+    margin-left: 2px;
+    background-color: white;
 }
 
+
+/* Inputs et Textarea */
 .form_group input,
 .form_group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
     font-family: inherit;
+    background-color: #fafafa;
+    transition: all 0.2s ease;
+    resize: vertical; /* Permet de redimensionner le textarea verticalement seulement */
 }
 
+/* Focus state (quand on clique dedans) */
+.form_group input:focus,
+.form_group textarea:focus {
+    outline: none;
+    border-color: #333; /* Bordure sombre sobre au focus */
+    background-color: #fff;
+    box-shadow: 0 0 0 2px rgba(51, 51, 51, 0.1);
+}
+
+/* =========================================
+   Bouton d'envoi
+   ========================================= */
 .submit_btn {
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
-    color: white;
+    margin-top: 1rem;
+    padding: 14px;
+    background-color: #222; /* Noir/Gris très foncé */
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s;
+    transition: background-color 0.2s ease, transform 0.1s;
+}
+
+.submit_btn:hover {
+    background-color: #000;
+}
+
+.submit_btn:active {
+    transform: scale(0.98);
 }
 
 .submit_btn:disabled {
     background-color: #ccc;
     cursor: not-allowed;
+    transform: none;
 }
 
-/* Messages de statut */
+/* =========================================
+   Messages de statut
+   ========================================= */
 .status_msg {
-    margin-top: 15px;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
     text-align: center;
-    font-size: 14px;
+    padding: 10px;
+    border-radius: 6px;
 }
-.status_msg.success { color: green; }
-.status_msg.error { color: red; }
+
+.status_msg.success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.status_msg.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+/* =========================================
+   Animations
+   ========================================= */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { 
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+/* =========================================
+   Mobile
+   ========================================= */
+@media (max-width: 600px) {
+    .contact_popup_content {
+        width: 95%;
+        padding: 1.5rem;
+    }
+}
