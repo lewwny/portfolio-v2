@@ -10,5 +10,11 @@
     "tags": ["React", "TypeScript", "CSS"],
     "image": "/portfolio-v2.png",
     "link": "https://github.com/lewwny/portfolio-v2.git"
+  },
+  {
+    "key": "vitrine",
+    "tags": ["React", "TypeScript", "CSS"],
+    "image": "/vitrine.jpeg",
+    "link": "https://garcialeny.com/"
   }
 ]

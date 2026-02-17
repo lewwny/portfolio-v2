@@ -63,6 +63,10 @@
 		"portfolio_v2": {
 			"title": "Portfolio v2",
 			"description": "My new dynamic website."
+		},
+		"vitrine": {
+			"title": "Vitrine",
+			"description": "A personal website showcasing my work and projects."
 		}
 	},
 	"schools": {
